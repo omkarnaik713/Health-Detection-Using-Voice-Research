@@ -55,7 +55,7 @@ function sendDataToServer(blob) {
     const formData = new FormData();
     formData.append('audio', blob, 'recording.wav'); // Ensure file extension matches
 
-    fetch('http://209.120.218.20:5000/predict', {
+    fetch('http://127.0.0.1:5000/predict', {
         method: 'POST',
         body: formData
     })
